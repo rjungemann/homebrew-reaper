@@ -16,6 +16,7 @@ cask "reaper-sws" do
   end
 
   depends_on cask: "reaper"
+  depends_on :macos
 
   artifact "reaper_sws-#{arch}.dylib",
            target: "#{Dir.home}/Library/Application Support/REAPER/UserPlugins/reaper_sws-#{arch}.dylib"

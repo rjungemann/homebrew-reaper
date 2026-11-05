@@ -17,6 +17,7 @@ cask "reaper-reapack" do
 
   auto_updates true
   depends_on cask: "reaper"
+  depends_on :macos
 
   artifact "reaper_reapack-#{arch}.dylib",
            target: "#{Dir.home}/Library/Application Support/REAPER/UserPlugins/reaper_reapack-#{arch}.dylib"
